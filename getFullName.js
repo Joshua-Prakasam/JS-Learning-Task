@@ -13,10 +13,7 @@ Output:
 
 function getFullName(firstName, lastName)
 {
-  if(firstName.isalpha() && lastName.isalpha())
-    return firstName + " " + lastName;
-  
-  
+    return firstName + " " + lastName; 
 }
 
 
