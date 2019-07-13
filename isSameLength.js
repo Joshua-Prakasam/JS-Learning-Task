@@ -8,6 +8,7 @@ Output:
   true
 */
 
+//This code even validates to true if the given string contains symbols instead of characters.
 function isSameLength(str1, str2)
 {
   return str1.length == str2.length;
