@@ -18,5 +18,12 @@ Sample Function proto:
 
 function printAllValues(obj)
 {
-  
+  let values = [];
+  Object.getOwnPropertyNames(obj).forEach(function(key){
+    values.push(obj[key]);
+  })
+  return values;
 }
+
+
+//printing Array(len) [actual array]
