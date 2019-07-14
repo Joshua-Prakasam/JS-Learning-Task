@@ -11,7 +11,7 @@ Success Case:
   Input:
     var expected = {foo: 5, bar: 6};
     var actual = {foo: 5, bar: 6}
-    assertObjectsEqual(actual, expected, ‘detects that two objects are equal’);
+    assertObjectsEqual(actual, expected, 'detects that two objects are equal');
   Output:
     Passed
 
@@ -19,12 +19,20 @@ Failure Case:
   Input:
     var expected = {foo: 6, bar: 5};
     var actual = {foo: 5, bar: 6}
-    assertObjectsEqual(actual, expected, ‘detects that two objects are equal’);
+    assertObjectsEqual(actual, expected, 'detects that two objects are equal');
   Output:
-    FAILED [my test] Expected {“foo”:6,”bar”:5}, but got {“foo”:5,”bar”:6}
+    FAILED [my test] Expected {"foo":6,"bar":5}, but got {"foo":5,"bar":6}
 
 Sample Function Proto:
   function assertObjectsEqual(actual, expected, testName){
     // your code here
   }
 */
+
+function assertObjectsEqual(actual, expected, testName) {
+  if(JSON.stringify(actual) == JSON.stringify(expected))
+    return "Passed";
+  return "FAILED [" + testName + "] Expected " + expected.toSource() + ", but got "+ actual.toSource();
+}
+
+//Quick Partial Solution
