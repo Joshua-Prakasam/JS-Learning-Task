@@ -13,7 +13,7 @@ var arr = [
 {name: Reed,		age: 26},
 {name: Daryl,	  	age: 23},
 {name: Sam, 		age: 20},
-{name: Mason,	 	aIge: 22},
+{name: Mason,	 	age: 22},
 {name: Oliver, 		age: 26},
 {name: Douglas, 	age: 19},
 {name: Miller, 		age: 20},
