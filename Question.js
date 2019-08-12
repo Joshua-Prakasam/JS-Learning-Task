@@ -27,6 +27,6 @@ var arr = [
 {name: "Freddie", 	age: 28},
 {name: "Robinson", 	age: 24},
 {name: "Stewart", 	age: 30},
-{name: "Montgomery",  age: 21},
+{name: "Montgomery",    age: 21},
 {name: "Harris", 	age: 23}
 ];
